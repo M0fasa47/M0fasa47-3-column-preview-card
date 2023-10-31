@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(185vh - 10px);
+}
+
+.container {
+  font-size: 15px;
+}
+
+.container-1 {
+  background: hsl(31, 77%, 52%);
+  padding: 2rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.container-2 {
+  background: hsl(184, 100%, 22%);
+  padding: 2rem;
+}
+
+.container-3 {
+  background: hsl(179, 100%, 13%);
+  padding: 2rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.title {
+  color: white;
+  font-family: 'Big Shoulders Display', sans-serif;
+}
+
+h2,h3 {
+  font-size: 30px;
+}
+
+p {
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+  font-size: 1rem;
+  font-family: 'Lexend Deca', sans-serif;
+  border-radius: 2rem;
+  border: 3px solid white;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 0.6rem;
+  margin: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.btn1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn1:hover {
+  color: white;
+  background: hsl(31, 77%, 52%);
+}
+
+.btn2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn2:hover {
+  color: white;
+  background: hsl(184, 100%, 22%);
+}
+
+.btn3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn3:hover {
+  color: white;
+  background: hsl(179, 100%, 13%);
+}
+
+.attribution { font-size: 16px;   font-family: 'Big Shoulders Display', sans-serif;
+  text-align: center; margin-top: 1rem;}
+.attribution a { color: hsl(31, 77%, 52%); text-decoration: none;}
+
+@media (min-width: 375px) {
+  .container {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    height: calc(100vh - 1px);
+  }
+  .container {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-1 {
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .container-2 {
+    margin-bottom: 30px;
+    border-top-left-radius: 0.5rem;
+  }
+
+  .container-3 {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    margin-bottom: 40px;
+  }
+}
